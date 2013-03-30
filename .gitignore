@@ -1,0 +1,12 @@
+
+.project
+
+.settings/org.eclipse.core.resources.prefs
+
+.settings/org.eclipse.core.runtime.prefs
+
+.texlipse
+
+tmp/document.aux
+
+tmp/document.log
