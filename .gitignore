@@ -7,6 +7,6 @@
 
 .texlipse
 
-tmp/document.aux
+tmp/*
 
-tmp/document.log
+
