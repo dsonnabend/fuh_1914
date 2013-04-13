@@ -10,3 +10,8 @@
 tmp/*
 
 
+/tmp
+/document.pdf
+/document.synctex.gz
+/fuh_1914_th10.pdf
+/fuh_1914_th10.synctex.gz
