@@ -9,6 +9,7 @@
 
 tmp/*
 
+.settings/*
 
 /tmp
 /document.pdf
