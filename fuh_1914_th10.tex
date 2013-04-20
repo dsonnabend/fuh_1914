@@ -3,7 +3,12 @@
 \documentclass{seminarvorlage}
 
 \usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
 
+% Silbentrennung im Fehlerfall hier angeben.
+\hyphenation{Grup-pen-dis-kus-sion}
+\hyphenation{kol-lo-bar-i-tive}
+\hyphenation{Klas-sen-situ-at-ion}
 
 \begin{document}
 
@@ -20,9 +25,16 @@
 
 \maketitle
 
-\abstract{Diese Arbeit vergleicht zwei Ansätze zur Unterstützung von Gruppendisskussionen. max. 1/4 Seite}
+\abstract{ Wir vergleichen anhand der Systeme Tin Can und Meeting Mediator zwei
+Ansätze zur Unterstützung und Verbesserung der Diskussion in kleinen Gruppen.
+Die Gruppengröße divergiert zwischen vier und sechs Personen. Nach einer kurzen
+Begriffsbestimmung gehen wir näher auf die Anforderungen ein und beschreiben,
+warum eine Gruppendiskussion eventl. nicht gut genug ist und warum diese
+verbessert werden könnte. Beide Systeme beschreiben wir detailiert in Aufbau,
+Umfang und Nutzung um abschliessend einen direkte Vergleich geben zu können.}
 
-\keywords{Unterstützung von Gruppendiskussion, Backchannel, Tin Can, Meeting Mediator}
+
+\keywords{Computer vermittelte Kommunikation, Unterstützung von Gruppendiskussion, Backchannel, Tin Can, Meeting Mediator}
 
 \section{Einleitung}
 wesentliche Idee, was soll unterstützt werden?
@@ -30,7 +42,7 @@ wesentliche Idee, was soll unterstützt werden?
 
 max. 1 Seite
 \subsection{Begriffsbestimmung}
-\subsubsection{Gruppendisskusion}
+\subsubsection{Gruppendiskussion}
 \subsubsection{Awareness}
 \subsubsection{Dominanz}
 \subsubsection{Kommunikationskanäle}
@@ -38,7 +50,7 @@ max. 1 Seite
 \subsubsection{Social Mirrors}
 
 \subsection{Anforderungen}
-Eigenschaften von Gruppendiskussionen, was möchte man fördern, welch Eigenschaften möchte man unterdrücken?
+ Eigenschaften von Gruppendiskussionen, was möchte man fördern, welch Eigenschaften möchte man unterdrücken?
 \input{tincan}
 \input{meetingmediator}
 
@@ -48,6 +60,10 @@ Eigenschaften von Gruppendiskussionen, was möchte man fördern, welch Eigenscha
 max. 1 Seite
 inkl. Diskussionen
 
+\begin{tabular}{ l | l | l }
+  Eigenschaft & Tin Can & Meeting Mediator \\
+  \hline
+\end{tabular}
 
 % MM: Augenkontakt als Dominanzindikator kann schwer mit IR Sensoren ermittelt werden,
 % dreht der Sprecher den Kopf, so zeigt seine Brust weiterhin auf die ihm 
