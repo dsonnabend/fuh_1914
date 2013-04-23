@@ -1,5 +1,4 @@
 \section{Tin Can}
-Autor: Daniel Sonnabend max. 1  
 
 \subsection{Idee und Motivation}
 Das Tin Can System \cite{HarGorSch2012} wurde 2012 am MIT Media Lab entwickelt.
@@ -17,14 +16,95 @@ zu einer verbesserten Moderation kommt, als auch um nach\-träglich eine Analyse
 des Vortrages zu erhalten. So erhält zum Beispiel jeder Teilnehmer eine E-Mail
 nach Ende des Vortrages mit einer Ideen- und Themenliste.
 
+Dadurch dass der Dozent den Backchannel moderierend beobachtet, kann er auf
+Themen dediziert eingehen oder 'schüchterne' Teilnehmer ermutigen Ihre privaten
+Notizen vorzurtragen oder zu veröffentlichen.
+
+Im Unterschied zu anderen Arbeiten (Referenzen!), ist bei TinCan der Backchannel
+dazu gedacht, den Frontchanel, also den Vortragenden oder Moderierenden zu
+beeinflussen und so der Diskussion eine neue Richtung zu geben.
+
+Die meisten Arbeiten versuchen den Übergang zwischen Front- und Backchannel zu
+optimieren, die Motivation bei Tin Can hingegen liegt hingegeen auf der
+Einführung eines weiteren Komzeptes, die s.g. Stages.
+
+Dabei sind Stages am ehesten als eine Art Bühne zu verstehen. Neben der
+Hauptbühne (dem Dozenten) gibt es eine Nebenbühne, das Tin Can System.
+
+Tin Can ist kein Broadcast System in dem ein Teilnehmer leicht viele Teilnehmer
+erreichen kann (und evenentuell mit der dadurch entstehenden Dominanz andere
+Teilnehmer unterdrückt), sondern eher eine Nebenraum, in dem viele
+Persönlichkeiten mit Ihrer 'Zielgruppe' kommunizieren können. Das kann der
+Frontchannel sein, aber auch eine private Idee oder aber ein Themenvorschlag.
+
+Im Gegensatz zu der Channelmethapher sollen die Teilnehmer motiviert werden
+viele kleine Beiträge beizusteuern und nicht große Broadcast.
+
+Die Tin Can Studie geht auf Grundlage moderner Sozialpsychologie davon aus, dass
+introvertierte Persönlichkeiten eher schriftlich an einer Diksussion teilnehmen,
+da sie so vorher ihren Beitrag prüfen, korrigieren oder ganz verwerfen können.
+
+Daraus schliessen sie, dass der goldene Standard der normalen Diksussion in
+kleinen Seminargruppen verbessert werden kann, in dem man durch einen
+schriftliche Beteiligungsmöglichkeit auch die introvertieren Gruppenmitglieder
+zu Wort kommen lässt. Somit verbessert sich das Outcome der Diskussion.
+ 
 \subsection{Architektur \& Technische Umsetzung}
-Tablet Nutzung / Tin Can Version
+Tin Can wurde als eine App für Tablets umgesetzt, da Tablets unauffällige
+Begleiter im Alltag sind und weniger störend wirken wie ein aufgeklapptes
+Laptop.
 
-Seite Architektur und Technische Umsetzung,
-Client-Server?
+Durch die geringe Formgröße kann jedes Gruppenmitglied das Gerät selbst
+entscheiden, wo das Tablet liegen oder stehen soll. Damit reduziert sich die
+Wahrnehmung des Gerätes als eigenständigen Gegenstand. Es ist mehr wie ein
+Schreibblock.
 
-Welche Funktionen werden geboten? Was sieht der Benutzer? Warum
-werden die Anforderungen erfüllt? 
+Tin Can wurde als Client-Server-Anwendung umgesetzt, die Clients sind reine
+Tablets, der Server führt ein Archive und bietet nachgelagerte Dienste an, wie
+z.B. den Mailversand mit einer Zusammenfassung der Diskussion nachdem diese
+beendet wurde.
+
+Bei Tin Can gibt es kein Rechtesystem, alle Benutzer sind gleichberechtigt.
+
+Das System zeigt den aktuellen Stand der Diskussion. Der Bildschirm zeigt 3
+Hauptbereiche: eine Themenliste, eine analoge Uhrzeit und eine Ideenliste.
+
+Die Themenliste sammelt sowohl alte, aktuellen und vorgeschlagene Themen, jeder
+Benutzer kann einfach mit einem Button 'Theme hinzufügen' ein neues Thema
+erstellen. Jedes Thema wird mit einem Kurztext beschrieben und mit einer Farbe
+von anderen Themen abgegrenzt. Anhand einer kleinen Uhr kann man die Dauer der
+diskutierten Themen sehen, bzw. die aktuelle Dauer bei dem aktuellen Thema.
+
+Indem man ein Thema antippt, kann man in einem Untermenü den Status des Themas
+verändern.
+
+Die analoge Uhr zeigt erstmal die aktuelle Uhrzeit, sowie farblich markiert die
+Dauer der einzelnen Themen.
+Wenn eine Stunde verstrichen ist, werden die Segemente welche die Dauer
+visualisieren aus dem Zentrum der Uhr an ihre Ecken ausgelagert und die aktuelle
+Stunde wird im Zentrum dargestellt. So erreicht Tin Can eine maximale
+Sitzungsdauer von 4 Std. ohne dass die Visualisierung unübersichtlich wird.
+
+Die Liste der Ideen befindet sich auf der rechten Seite des Bildschirmes, die
+Ideen sind chronologisch sortiert. Ideen sind einfach Textbeiträge wie Fragen,
+Aussagen oder Twitter-ähnliche Antworten. Man kann mit zwei Buttons eine Idee
+hinzufügen bzw. zur Gruppe hinzufügen. Erster Button speichert die Idee in einem
+persönlichen Bereich, die anderen pupliziert sofort die Idee im Zeitraster der
+Gruppenideen und zu dem persönlichen Bereich. Ideen welche im Gruppenraster
+dargestellt werden, weisen in Klammern den Autor des Beitrages aus. Außerdem
+gibt es ein Bewertungssystem, mit welchem andere Teilnehmer Ihre Zustimmung
+signalisieren können. Wie man auch in anderen Studien gesehen hat, so nutzt auch
+Tin Can nur ein positives Feedback in Facebook-Form (Likes).
+
+Benutzer werden am Rand des Bildschirm nach einem Zufallsprinzip als Rechtecke
+mit Ihrem Namen dargestellt. Mit einem Tipp auf diese Rechteck kann man alle
+Ideen (auch die persönlichen) des Benutzer sehen. Jeder (nicht nur der
+Ersteller) kann eine Idee eines anderen Benutzer aus dessen persönlichen
+Bereiches in die Gruppenliste der Ideen ziehen. Diese Idee wird dann
+entsprechend gekennzeichnet ('Eine Idee von Daniel veröffentlich von Antje).
+
+Damit sind persönliche Ideen per Definition nichts privates. Sie bieten dem
+Benutzer eher eine Möglichkeit, seine Zurückhaltung bei einer Idee auszudrücken.
 
 \subsection{Adaption}
 Tin Can führt dazu so genannte `Stages` ein. Diese sind am ehesten mit dem Bild
