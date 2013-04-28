@@ -2,43 +2,28 @@
 
 \subsection{Idee und Motivation}
 Das Tin Can System \cite{HarGorSch2012} wurde 2012 am MIT Media Lab entwickelt.
-Dabei handelt es sich um ein Tablet basiertes kollobaritive System, welches in
-einer typischen Klassensituation es ermögicht, Ideen und wei\-ter\-führ\-en\-den
-Diskussionen zu sammeln.
+Dabei handelt es sich um ein Tablet basiertes kollobaratives System, welches in
+einem typischen Seminarsetting es ermögicht, Ideen und wei\-ter\-führ\-en\-den
+Themen zu sammeln.
 
 Motiviert durch zahlreiche Studien, welche belegen, dass eher schüchterne
 Persönlichkeiten von zusätzlichen kollobrorativen Werkzeugen profitieren, möchte
-Tin Can die Teilnahme am Unterricht bzw. Vortrag fördern.
+Tin Can die Teilnahme am Unterricht bzw. Vortrag und die Themenvielfalt fördern.
 
-Die Ideensammlung bzw. Themensammlung für weitere Diskussionen wird sowohl live
-genutzt, damit der Vortragende mehr auf das Auditorium eingehen kann und es so
-zu einer verbesserten Moderation kommt, als auch um nach\-träglich eine Analyse
-des Vortrages zu erhalten. So erhält zum Beispiel jeder Teilnehmer eine E-Mail
-nach Ende des Vortrages mit einer Ideen- und Themenliste.
+Die gesammelten Ideen und Themen werden synchron zum Vortrag visualisert sowie
+aufbereitet nach Ende der Sitzung allen Teilnehmern per Mail bereitgestellt.
 
 Dadurch dass der Dozent den Backchannel moderierend beobachtet, kann er auf
 Themen dediziert eingehen oder 'schüchterne' Teilnehmer ermutigen Ihre privaten
 Notizen vorzurtragen oder zu veröffentlichen.
 
-Im Unterschied zu anderen Arbeiten (Referenzen!), ist bei TinCan der Backchannel
-dazu gedacht, den Frontchanel, also den Vortragenden oder Moderierenden zu
-beeinflussen und so der Diskussion eine neue Richtung zu geben.
-
 Die meisten Arbeiten versuchen den Übergang zwischen Front- und Backchannel zu
-optimieren, die Motivation bei Tin Can hingegen liegt hingegeen auf der
-Einführung eines weiteren Komzeptes, die s.g. Stages.
+optimieren, die Motivation bei Tin Can liegt hingegeen auf der Einführung eines
+weiteren Komzeptes, der Bühne (Stage).
 
-Dabei sind Stages am ehesten als eine Art Bühne zu verstehen. Neben der
-Hauptbühne (dem Dozenten) gibt es eine Nebenbühne, das Tin Can System.
-
-Tin Can ist kein Broadcast System in dem ein Teilnehmer leicht viele Teilnehmer
-erreichen kann (und evenentuell mit der dadurch entstehenden Dominanz andere
-Teilnehmer unterdrückt), sondern eher eine Nebenraum, in dem viele
-Persönlichkeiten mit Ihrer 'Zielgruppe' kommunizieren können. Das kann der
-Frontchannel sein, aber auch eine private Idee oder aber ein Themenvorschlag.
-
-Im Gegensatz zu der Channelmethapher sollen die Teilnehmer motiviert werden
-viele kleine Beiträge beizusteuern und nicht große Broadcast.
+Neben der Hauptbühne (dem Dozenten) gibt es eine Nebenbühne, das Tin Can System.
+Im Unterschied zu anderen Arbeiten (Referenzen!), ist bei TinCan die Nebenbühne
+dazu gedacht, die Hauptbühne nicht unterbrechend zu beeinflussen.
 
 Die Tin Can Studie geht auf Grundlage moderner Sozialpsychologie davon aus, dass
 introvertierte Persönlichkeiten eher schriftlich an einer Diksussion teilnehmen,
@@ -48,16 +33,23 @@ Daraus schliessen sie, dass der goldene Standard der normalen Diksussion in
 kleinen Seminargruppen verbessert werden kann, in dem man durch einen
 schriftliche Beteiligungsmöglichkeit auch die introvertieren Gruppenmitglieder
 zu Wort kommen lässt. Somit verbessert sich das Outcome der Diskussion.
+
+Tin Can führt dazu so genannte `Stages` ein. Diese sind am ehesten mit dem Bild
+einer Theaterbühne zu vergleichen. Der Sprecher steht dabei vor der Gruppe auf
+der so genannten Haupt-Bühne(`main spoken stage). Die Zuhörer haben in der
+normalen Vortragssituation keine Möglichkeit im Vortag Präsenz zu zeigen ohne
+unterbrechend einzugreifen. Dazu bietet TinCan eine Nebenbühne in welchem die
+Zuhörer Ihre Ideen (privat wie öffentlich) bzw. weiterführende Diskussionsthemen
+plazieren können.
  
 \subsection{Architektur \& Technische Umsetzung}
-Tin Can wurde als eine App für Tablets umgesetzt, da Tablets unauffällige
+Tin Can wurde als eine App für Tablets implementiert, da Tablets unauffällige
 Begleiter im Alltag sind und weniger störend wirken wie ein aufgeklapptes
 Laptop.
 
-Durch die geringe Formgröße kann jedes Gruppenmitglied selbst
-entscheiden wie es das Gerät halten möchte. Damit reduziert sich die
-Wahrnehmung des Gerätes als eigenständigen Gegenstand. Es ist mehr wie ein
-Schreibblock.
+Durch die geringe Formgröße kann jedes Gruppenmitglied selbst entscheiden wie es
+das Gerät halten möchte. Diese Bewegungsfreiheit minimiert Störungen in der
+Gruppe.
 
 Tin Can wurde als Client-Server-Anwendung umgesetzt, die Clients sind reine
 Tablets, der Server führt ein Archive und bietet nachgelagerte Dienste an, wie
@@ -66,11 +58,17 @@ beendet wurde.
 
 Bei Tin Can gibt es kein Rechtesystem, alle Benutzer sind gleichberechtigt.
 
+Tin Can ist kein Broadcast System in dem ein Teilnehmer leicht viele Teilnehmer
+erreichen kann (und evenentuell mit der dadurch entstehenden Dominanz andere
+Teilnehmer unterdrückt), sondern eher eine Nebenraum, in dem viele
+Persönlichkeiten mit Ihrer 'Zielgruppe' kommunizieren können. Das kann der
+Frontchannel sein, aber auch eine private Idee oder aber ein Themenvorschlag.
+
 Das System zeigt den aktuellen Stand der Diskussion. Der Bildschirm zeigt 3
 Hauptbereiche: eine Themenliste, eine analoge Uhrzeit und eine Ideenliste.
 
-Die Themenliste sammelt sowohl alte, aktuellen und vorgeschlagene Themen, jeder
-Benutzer kann einfach mit einem Button 'Theme hinzufügen' ein neues Thema
+Die Themenliste sammelt sowohl alte, aktuelle und vorgeschlagene Themen. Jeder
+Benutzer kann einfach mit einem Button 'Thema hinzufügen' ein neues Thema
 erstellen. Jedes Thema wird mit einem Kurztext beschrieben und mit einer Farbe
 von anderen Themen abgegrenzt. Anhand einer kleinen Uhr kann man die Dauer der
 diskutierten Themen sehen, bzw. die aktuelle Dauer bei dem aktuellen Thema.
@@ -78,11 +76,11 @@ diskutierten Themen sehen, bzw. die aktuelle Dauer bei dem aktuellen Thema.
 Indem man ein Thema antippt, kann man in einem Untermenü den Status des Themas
 verändern.
 
-Die analoge Uhr zeigt erstmal die aktuelle Uhrzeit, sowie farblich markiert die
-Dauer der einzelnen Themen.
+Die analoge Uhr zeigt die aktuelle Uhrzeit, sowie in ihrer Mitte farblich
+hervorgehoben die Dauer der einzelnen Themen.
 Wenn eine Stunde verstrichen ist, werden die Segemente welche die Dauer
-visualisieren aus dem Zentrum der Uhr an ihre Ecken ausgelagert und die aktuelle
-Stunde wird im Zentrum dargestellt. So erreicht Tin Can eine maximale
+visualisieren aus dem Zentrum der Uhr an ihre Ränder ausgelagert und die
+aktuelle Stunde wird im Zentrum dargestellt. So erreicht Tin Can eine maximale
 Sitzungsdauer von 4 Std. ohne dass die Visualisierung unübersichtlich wird.
 
 Die Liste der Ideen befindet sich auf der rechten Seite des Bildschirmes, die
@@ -106,39 +104,23 @@ entsprechend gekennzeichnet ('Eine Idee von Daniel veröffentlich von Antje).
 Damit sind persönliche Ideen per Definition nichts privates. Sie bieten dem
 Benutzer eher eine Möglichkeit, seine Zurückhaltung bei einer Idee auszudrücken.
 
-\subsection{Adaption}
-Tin Can führt dazu so genannte `Stages` ein. Diese sind am ehesten mit dem Bild
-einer Theaterbühne zu vergleichen. Der Sprecher steht dabei vor der Gruppe auf
-der so genannten Haupt-Bühne(`main spoken stage). Die Zuhörer haben in der
-normalen Vortragssituation keine Möglichkeit im Vortag Präsenz zu zeigen ohne
-unterbrechend einzugreifen. Dazu bietet TinCan eine Nebenbühne bzw. einen
-zweiten Kanal (`backchannel`) in welchem die Zuhörer Ihre Ideen (privat wie
-öffentlich) bzw. wei\-ter\-führ\-en\-de Dis\-kus\-sion\-themen plazieren können.
-Damit drücken sie ihren Wünsche aus, welche vom Vortragenden live aufgenommen
-werden können um den Vortrag zu gestalten.
-
-Tin Can setzt ganz bewusst auf textbasierte Tools um die normale Vortragsebene
-nicht zu ersetzen, sondern um eine weitere Ebene zu erweiternt. Damit möchte es
-weniger die Teilnahme an einer Diskussion visualiseren und normalisieren, wie es
-z.B. System wie Seconde Messenger oder Visiphone machen, sondern das Ergebnis
-gebenüber einer klassischen Diskussion verbessern.
 
 \subsection{Evaluation}
-Harry et al. führten Ihre Studie mit zwei Seminaren über 6 Wochen durch. Ein
-Gruppe am Morgen mit 8 Studierenden und eine Nachmittagsgruppe mit 11
-Studierenden. In die Studie flossen die Beobachtungen der Seminar,
-Aufzeichnungen der mit Tin Can erfassten Texte sowie semistrukturierte
-Interviews.
+Harry et al. führten Ihre Studie mit zwei Seminaren über 6 Wochen durch. Dabei
+bestand eine Gruppe am Morgen aus 8 Studierenden und eine zweite Gruppe am
+Nachmittag aus 11 Studierenden. In die Studie flossen die Beobachtungen der
+Seminare, Aufzeichnungen der mit Tin Can erfassten Sitzungen sowie
+semistrukturierte Interviews ein.
 
 Auf eine Video- oder Sprachaufzeichnung wurde verzichtet, damit nicht dieses
 Medium als störender Faktor die Studie verfälscht (man wollte ja eben gerade
 nicht die Diskussion stören). Die Beobachtung wurde nicht durch den
-Semniarleiter aufgezeichnet sondern durch einen neutralen Beobachter da der
+Seminarleiter aufgezeichnet sondern durch einen neutralen Beobachter da der
 Gruppenleiter als Teil der Gruppe gesehen werden muß.
 
 Die Aufzeichnung des Beobachters folgten keinem Schema, es wurde alles
 aufgezeichnet, von der Position des Tablets bis hin zu dem Verhalten der
-Gruppenteilnehmer untereindander.
+Gruppenteilnehmer untereinander.
 
 
 \subsection{Ergebnis}
@@ -166,16 +148,14 @@ Die durchgeführte Analyse der aufgezeichneten Sitzungen ergab folgende Kennzahl
 \end{table}
 
 Auffallend waren hier zwei Kennzahlen: Die hohe Abweichung der Themendauer von
-673  sec wurde von den Autoren dadurch erklärt, dass es durch viele kurze Themen
-hier zu einer Verzerrung der Verteilung kommt.
+673  sec wurde von den Autoren durch die vielen kurzen Themen erklärt, welche zu
+der Verzerrung der Verteilung führten.
 
 Die zweite Abnomalie war die ungleichmäßige Verteilung von Themen gesehen über
 die Zeit. Die Studie kommt zu dem Ergebnis, dass dies eine vorhersehbare 'bursty
 structure' Verteilung im klassischen Sinne des Begriffs von Kleinberg ist.
 
-In den durchgeführten Interviews wurde klar, dass Tin Can eine zusätzliche
-Möglichkeit der Diskussion bietet, genau so, wie es die Autoren mit der
-Second-Stage im Sinn hatten. Tin Can bietet die Möglichkeit einer Nebenbühne,
+Die Interviews zeigten, dass Tin Can die Möglichkeit einer Nebenbühne bietet,
 nicht aber den Zwang diese zu benutzen. Das Hauptproblem für die
 Studienteilnehmer war die Balance zwischen der Main- und Second-Stage zu finden
 ohne sofort unaufmerksam zu wirken.
@@ -184,8 +164,9 @@ Ebenso wurde als positiv empfunden, dass man die Diskussion auf der Second-Stage
 nicht unbedingt verfolgen musste, da man ja nach Ende der Diskussion eine
 Zusammenfassung gemailt bekommt.
 
-Der Dozent nutzte Tin Can oft um das Interesse an seinem Vortrag live zu messen
-und Moderation gezielter zu führen.
+Der Dozent nutzte Tin Can oft um das Feedback an seinem Vortrag live zu messen
+und Moderation gezielter zu führen indem er z.B. die privaten Ideen aufgreift
+und die Autoren diese Themas motiviert, an der Diskussion teilzunehmen.
 
 Negativ galt bei den Teilnehmern die Texteingabe auf dem Tablet, welche oft als
 nicht schnell genug empfunden wurde um mit der Diskussion mithalten zu können.
@@ -194,25 +175,25 @@ Die Studie zeigt, dass das duale Stagekonzept schüchterne eher als 'Denker'
 beschriebene Charaktere die Chance gibt, Ihren Beitrag auf der Side-Stage zu
 posten und so an der Diskussion teilzunehmen. Dabei ist nicht immer mangelndes
 Selbstvertrauen in den Interviews genannt worden, sondern oft auch der Wunsch
-nicht sötrend in den Hauptvortrag eingreifen zu wollen. So führte eine lebhafte
-Diskussion auf der virtuellen Bühne zu keiner physikalischen Störung.
+nicht sötrend in den Hauptvortrag eingreifen zu wollen.
 
 Die Möglichkeit Ideen zu teilen, eigene Ideenlisten zu führen und Ideen anderer
 aufzugreifen wurde besonders von den Dozenten geschätzt um die Beteiligung durch
-direkte Ansprache der Teilnehmer zu erhöhen. Dieser wurde durch die direkte
-Integration ebenso wie die 'Likes' von anderen Teilnehmern motiviert, Ihre
-privaten Ideen zu erläutern.
+direkte Ansprache der Teilnehmer zu erhöhen. Teilnehmer wurden durch die direkte
+Integration so wie durch Bewertung ihrer Ideen von anderen Teilnehmern
+motiviert, sich mehr zu beteiligen.
 
 Die Studie belegt, dass beide Ziele des Projekts Tin Can erfolgreich umgesetzt
-werden konnten, da sowohl Ideen- und Themenvielfalt und Diskussionsteilnahme
-verbessert werden konnten.
+werden konnten, da sowohl Ideen- und Themenvielfalt als auch die
+Diskussionsteilnahme nachweislich verbessert werden konnten.
 
 Allerdings kommt die Studie auch zu dem Schluss, dass es eine kritische Masse im
 Sinne der Gruppengröße gibt. In zu kleinen Gruppen kann Tin Can nicht richtig
 funktionieren, da die Nebenbühne einen Teil der gesamten Aufmerksamkeit fordert.
-In größeren Gruppen kann dieser Teil der Aufmerksamkeit dadurch gewonnen werden,
-dass nicht immer jeder gleichzeitig sprechen kann und die Wechselzeiten höher
-sind als bei kleineren Gruppen.
+
+Bei größeren Gruppen gibt es immer mal wieder Zeit, sich von der Hauptbühne auf
+die Nebenbühne zu konzentrieren da es mehr Wechselzeiten gibt (z.B. zwischen
+verschiedenen Sprechern, etc.)
 
 
 

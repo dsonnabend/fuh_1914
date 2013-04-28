@@ -290,9 +290,9 @@
 \global\divide\auwidth by \aucount}
 
 % \and was modified to count the number of authors.  GKMT 12 Aug 1999
-\def\alignauthor{%                  % \begin{tabular}
-\end{tabular}%
-  \begin{tabular}[t]{p{\auwidth}}\centering}%
+\def\alignauthor{                  %\begin{tabular}
+\end{tabular}
+\begin{tabular}[t]{p{\auwidth}}\centering}%
 
 % -- Start of block C -- METAFONT (modern usage)
 % +++++++++++++++++++++++++++++++++++++++++++++
