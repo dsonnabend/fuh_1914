@@ -1231,7 +1231,7 @@ pdfauthor={},
 
 \def\@citenormal{%
     \@ifnextchar [{\@tempswatrue\@citex;}
-                  {\@tempswafalse\@citex,[]}% was ; Gerry 2/24/00
+                  {\@tempswafalse\@citex[]}% was ; Gerry 2/24/00
 }
 \def\@citeyear{%
     \@ifnextchar [{\@tempswatrue\@citex,}%
