@@ -23,6 +23,7 @@
 \author{
   \alignauthor D. Sonnabend\\
     \email{yyy@yyy.de}
+    \and
   \alignauthor A. Westerhoff\\
     \email{xxx@xxx.de}
 }
@@ -34,30 +35,34 @@ Ansätze zur Unterstützung und Verbesserung der Diskussion in Gruppen.
 Die Gruppengröße divergiert zwischen vier und elf Personen und bildet damit
 typische Seminarsituationen ab. Nach einer kurzen Begriffsbestimmung gehen wir
 näher auf die Anforderungen ein und beschreiben, warum eine Gruppendiskussion
-eventl. nicht gut genug ist und warum diese verbessert werden kann. Beide
-Systeme beschreiben wir detailiert in Aufbau, Umfang und Nutzung um
-abschliessend einen direkte Vergleich geben zu können.}
+manchmal nicht so effektiv ist, wie sie es sein könnte und wie dieses
+verbessert werden kann.
+Beide Systeme beschreiben wir detailliert in Aufbau, Umfang und Nutzung um
+abschliessend einen direkten Vergleich herstellen zu können.}
 
 
 \keywords{Computer vermittelte Kommunikation, Unterstützung von
 Gruppendiskussion, Backchannel, Tin Can, Meeting Mediator}
 
 \section{Einleitung}
-Die Diskussion einer Gruppe, welche sich persönlich in einem Ort zur selben Zeit
-gegenübersitzt, wird oft als optimale Kommunikationstechnik betrachtet. Harry et
-al. \cite{HarGorSch2012} sprechen sogar von einem `Goldstandard`. Viele Computer
-gestützten Systeme versuchen, ebene diese Kommunikationsstandard virtuell
-abzubilden und eine Dimension zu ersetzen (sei es der unterschiedliche Ort oder
-die fehlenden audio-visuelle Kommunikation). Dabei wird oft unterschätzt, das
-dieser 'Goldstandard' ebenfalls weiter verbessert werden kann. Dabei denkt
-sicherlich jeder an selbst erlebte Besprechungen, die oft auf Grund schlechter
+Die Diskussion einer Gruppe, deren Mitglieder sich an einem Ort zur selben Zeit
+gegenübersitzen, wird oft als optimale Kommunikationstechnik betrachtet. Harry
+et al. \cite{HarGorSch2012} sprechen sogar von einem `Goldstandard`. Viele
+Computer- gestützte Systeme versuchen, genau diesen Kommunikationsstandard
+virtuell abzubilden und eine Dimension zu ersetzen z.B. den unterschiedlichen
+Ort oder die fehlende audio-visuelle Kommunikation. Dabei wird oft unterschätzt,
+dass dieser 'Goldstandard' ebenfalls weiter verbessert werden kann, denn auch
+solche Diskussionen sind häufig nicht so effektiv, wie sie es sein könnten.
+Dabei denkt sicherlich jeder an selbst erlebte Besprechungen, die oft auf Grund schlechter
 Strukturierung bzw. durch Unterbrechungen wesentlich fragmentiert wurden oder
-von einigen Teilnehmern dominiert wurden.
+von einigen Teilnehmern dominiert wurden, so dass wichtige Aspekte in der
+Diskussion nicht berücksichtigt wurden.
 
-Einfache Managmenttechniken wie Brainstorming bzw. eine Tagesordnung können da
-sicherlich bereits helfen. Die beiden vorgestellten Systeme gehen allerdings
+Einfache Managementtechniken wie Brainstorming, eine Tagesordnung und eine
+Rednerliste können da sicherlich bereits helfen.
+Die beiden vorgestellten Systeme Tin Can und Meeting Mediator gehen allerdings
 noch einen Schritt weiter und versuchen synchron zur Diskussion bzw. dem Vortrag
-eine weiteren Wahrnehmungsebene zu schaffen.
+eine weitere Wahrnehmungsebene zu schaffen.
 
 % Im Falle des Systemes Tin Can
 % handelt es sich um Textnotizen, welche das Brainstorming bzw. die Diskussion
@@ -68,67 +73,72 @@ eine weiteren Wahrnehmungsebene zu schaffen.
 
 \section{Begriffsbestimmung}
 \subsection{Gruppendiskussion}
-Unter dem Begriff der Gruppendiskussion versteht man eine themenzentrierte
-Gesprächssituation von mehr als 2 Personen mit dem Ziel des Brainstorming oder
-der Problemlösung. Bei einer Gruppendiskussion befinden sich die Teilnehmer an
-dem selben Ort oder räumlich verteilt (virtuell).
+Unter dem Begriff der Gruppendiskussion verstehen wir in diesem Zusammenhang
+eine themenzentrierte Gesprächssituation von mehr als 2 Personen mit dem Ziel
+des Brainstorming oder der Problemlösung. Bei einer Gruppendiskussion befinden
+sich die Teilnehmer zeitgleich an dem selben Ort oder räumlich verteilt
+(virtuelle Gruppe).
 
 \subsection{Awareness}
-Awarness ist die Wahrnehmung eines anderen Individuums bzw. dessen Präsenz. Dazu
-gehören nicht nur die Sinneswahrnehmungen wie sehen, hören und fühlen, sondern
-auch insbesondere die Interpretation dieser Wahrnehmungen im Context zu den
-eigenen Aktivitäten.
-Mit der Herstellung von Awarness in kooperativen System möchte man alle
-soziologischen Signale transportieren (wie z.B. Emotionen).
+Awareness ist die Wahrnehmung eines anderen Individuums bzw. dessen Präsenz.
+Dazu gehören nicht nur die Sinneswahrnehmungen wie sehen, hören und fühlen,
+sondern auch insbesondere die Interpretation dieser Wahrnehmungen im Kontext zu
+den eigenen Aktivitäten.
+Mit der Herstellung von Awareness in kooperativen Umgebungen möchte man alle
+soziologischen Signale transportieren wie z.B. Emotionen.
 
 \subsection{Aufmerksamkeit}
 Laut Durkheim \cite{Dur1974} sind wir in jeder Situation immer mehr oder weniger
 durch externe Stimuli abgelenkt. Diese Störungen unterbrechen den fiktiven
-Begriff der Aufmerksamkeit. Es bedarf also einer Anstrengung Aufmerksamkeit
-mitzuteilen. Das kann durch verschiedenste soziale Aktionen präsentiert werden
-wie z.B. Zuhören oder aber das Schreiben von Notizen.
+Begriff der Aufmerksamkeit. Es bedarf also einer Anstrengung anderen Personen
+seine Aufmerksamkeit mitzuteilen. Das kann durch verschiedenste soziale Aktionen
+präsentiert werden wie z.B. Zuhören oder aber das Schreiben von Notizen.
 
 \subsection{Dominanz}
-Tritt ein Individuum aus einer Gruppe durch überdurchschnittliche Beteiligung
-heraus, sprechen wir von Dominanz. In den beiden vorliegenden Studien wird
-Dominanz (im Gegensatz zu der allgemeinen Bedeutung) nicht im negativen Kontext
-gesehen. Viel mehr beschreibt eine hohe Dominanz die Beteiligung in der Gruppe.
-Die Steigerung der Dominanz bei schüchternen Gruppenmitgliedern wird oft als
-Ziel von Studien gennant.
+Tritt ein Individuum aus einer Gruppe durch üb\-er\-durch\-schnitt\-liche
+Beteiligung heraus und wirkt damit beherrschend im Diskussionsverlauf, sprechen
+wir von Dominanz.
+In den beiden vorliegenden Studien wird Dominanz (im Gegensatz zu der
+allgemeinen Bedeutung) nicht im negativen Kontext gesehen. Viel mehr beschreibt
+eine hohe Dominanz die Beteiligung in der Gruppe.
+Die Steigerung der Dominanz bei zurückhaltenderen Gruppenmitgliedern wird oft
+als Ziel von Studien gennant.
 
 \subsection{Kanal (Channel)}
-Ein Kanal beschreibt im wesentlichen zwei Dinge. Erstens ist ein
-Kommunikationskanal der Weg einer Botschaft vom Sender zum Empfänger. Dies ist
-meist in der Soziologie die Sprache oder non-verbal die Körpersprache.
+Ein Kanal beschreibt im wesentlichen zwei Dinge \cite{BergKara2009-1}. Erstens
+ist ein Kommunikationskanal der Weg einer Botschaft vom Sender zum Empfänger.
+Dies ist meist in der Soziologie die Sprache oder non-verbal die Körpersprache.
 Im Kontext der vorgestellten Studien ist der Kanal (engl. Channel) beschreibt
 ein Kommunikationskanal. So ist z.B. die Sprache ein Kommunikationskanal, ein
 Chat ein textueller Kanal zum Austausch von Informationen. Viele Studien
 versuchen den Wechsel von einem Kanal zum nächsten zu optimieren. Ein Kanal wird
 oft von einem einzelnen Teilnehmer genutzt um viele Teilnehmer zu erreichen
-(Broadcast).
+(Broadcast). Front- und Backchannel
 
 \subsection{Bühne (Stage)}
-Anders als Kanäle beschreibt die Bühne (engl. Stage) einen Ort, an dem
-gleichberechtigt eine Performance stattfinden kann. Dabei ist weniger der
-Durchsatz das entscheidene Kriterium. Vielmehr soll ein zusätzlicher Raum
-geschaffen werden um Informationen 'abzulegen'. Als Analogie dient den Autoren
-Harry et al. ein Restaurant mit Küche und Speisesaal, in beiden Räumlichkeiten
-werden verschiedene Tätigkeiten 'performt' die zu einem gemeinsamen Ergebnis
-führen.
+Anders als Kanäle beschreiben Bühnen (engl. Stage) Orte, an denen
+gleichberechtigt eine Performance stattfinden kann \cite{Goff1959}. Dabei ist
+weniger der Durchsatz das entscheidene Kriterium. Vielmehr soll ein zusätzlicher
+Raum geschaffen werden um Informationen 'abzulegen'. Als Analogie dient den
+Autoren Harry et al. ein Restaurant mit Speisesaal (front performance) und Küche
+(back performance).
+An beiden Orten werden verschiedene Tätigkeiten von den gleichen handelnden
+Personen 'performt' die zu einem gemeinsamen Ergebnis führen.
 
 \subsection{Soziale Spiegel (Social Mirrors)}
-Soziale Spiegel \cite{BergKara2009-2} ist eine Visualisierung von sozialen
-Gruppendynamiken in Echtzeit, die allen Gruppenmitgliedern zur Verfügung steht,
-mit dem Ziel diese Dynamiken zu verändern. Visualisert wird das eigene Verhalten
-sowie das Verhalten aller anderen Gruppenmitglieder aus der Sicht einer dritten
-Person. Dabei wird die Relation des Individuums zur Gruppe verdeutlicht, dies
-soll dem Individium Anreize bieten sein Verhalten an den Gruppendurchschnitt
+Soziale Spiegel \cite{BergKara2009-2} sind Visualisierungen von sozialen
+Gruppendynamiken in Echtzeit, die allen Gruppenmitgliedern zur Verfügung stehen,
+mit dem Ziel Dynamiken zu verändern. Visualisert wird das eigene Verhalten sowie
+das Verhalten aller anderen Gruppenmitglieder aus der Sicht einer dritten
+Person. Dabei wird die Relation des Individuums zur Gruppe verdeutlicht. Dies
+soll jedem Individium Anreize bieten sein Verhalten an den Gruppendurchschnitt
 anzupassen. Verarbeitet werden insbesondere auditive und visuelle Signale, aber
-auch Emotionen.
+auch emotionale Signale.
 
 \section{Problemanalyse \& Anforderungen}
 In Arbeitsgruppen wie zum Beispiel Seminaren, mündlichen Diskussionen oder
-Projektbesprechungen hindern einige Faktoren das Ergebnis dieser Gruppen.
+Projektbesprechungen gibt es Barrieren, die die Partizipation aller
+Mitglieder verhindern und damit die Effektivität der Gruppe einschränken.
 
 Dadurch kommt die Gruppe entweder gar nicht bzw. nicht effektiv zu einem best
 möglichen Ergebnis. Durch Dominanzen in der Gruppe kommt es nicht zu einer
@@ -136,8 +146,8 @@ gleichberichtigen Beteiligung an der Diskussion, dies mindert die Themenvielfalt
 und den Ideenaustausch. Rezessive Persönlichkeiten werden nicht maximal
 gefördert.
 
-Gefordert wird, Dominanzen zu supremieren, rezessive Per\-sön\-lich\-keit\-en zu
-couragieren und die Themen-/Ideenvielfalt zu maximieren.
+Gefordert wird, Dominanzen zu supremieren, rezessive Per\-sön\-lich\-keit\-en
+zu couragieren und die Themen-/Ideenvielfalt zu maximieren.
 
 \input{tincan}
 \input{meetingmediator}
@@ -148,11 +158,14 @@ Tin Can zielt auf eine Maximierung der Themen/Ideen und auf eine Verbesserung
 der Moderation und somit auf eine Regulierung der Gruppendynamik.
 
 Meeting Mediator hingegen setzt auf eine Visualisierung des Teilnehmerverhaltens
-in Echtzeit allein auf Grundlage der Sprache (Dauer, Lautstärke und Geschwindigkeit
-eines Beitrages). Andere sensorische Messdaten wurden nicht berücksichtigt.
+in Echtzeit allein auf Grundlage der Sprache (Dauer, Lautstärke und
+Geschwindigkeit eines Beitrages), mit dem Ziel die Gruppendynamik zu
+visualisieren und damit zu einer Verbesserung der Partizipation aller
+Gruppenmitglieder beizutragen.
 
-Eine Übersicht der Systemeigenschaften findet man in folgender Tabellen:
-\begin{table}
+Eine Übersicht der Systemeigenschaften findet man in folgender Tabelle:
+
+\begin{table}[h]
 \begin{tabular}{ l | c | c }
   Eigenschaft & Tin Can & Meeting Mediator \\
   \hline
@@ -181,51 +194,52 @@ Eine Übersicht der Systemeigenschaften findet man in folgender Tabellen:
 Bei Tin Can erkennt man in der Studie den Mehrwert für das einzelne
 Gruppenmitglied. Dadurch war die Akzeptanz sehr hoch. Durch den Themen- und
 Ideenvorrat wurden die Diskussionen lebhafter und spannender. Die
-Mög\-lich\-keit eine Zusammenfassung nach der Diskussion zu bekommen empfanden die Teilnehmer
-als sehr positiv, da man nicht das Gefühl hatte auf der Nebenbühne etwas zu
-verpassen. Negativ wurde nur die Texteingabe auf dem Tablet empfunden, da diese
-doch recht zeitintensiv war und einige Teilnehmer ihre Ideen nicht rechtzeitig
-einbringen konnten.
+Mög\-lich\-keit eine Zusammenfassung nach der Diskussion zu bekommen empfanden
+die Teilnehmer als sehr positiv, da man nicht das Gefühl hatte auf der
+Nebenbühne etwas zu verpassen. Negativ wurde nur die Texteingabe auf dem Tablet
+empfunden, da diese doch recht zeitintensiv war und einige Teilnehmer ihre Ideen
+nicht rechtzeitig einbringen konnten.
 
-Das Konzept beim Meeting Mediator wurden bei den Teilnehmern ebenfalls als nicht
+Das Konzept beim Meeting Mediator wurde bei den Teilnehmern ebenfalls als nicht
 störend empfunden, da die sozio-metrischen Sensoren einfach um den Hals getragen
 werden konnten und die Mobiltelefone allgegenwärtig sind und daher nicht als
 Werkzeug in Erscheining traten.
 
-Die einfache der Gesprächdynamik war für die Diskussionteilnehmer leicht
-interpretierbar und konnte von jedem Teilnehmer zur Verhaltenseinschätzung und
-möglichen Verhaltensänderung eingesetzt werden.
+Die einfache Visualisierung qder Gesprächdynamik war für die
+Diskussionteilnehmer leicht interpretierbar und konnte von jedem Teilnehmer zur
+Verhaltenseinschätzung und möglichen Verhaltensänderung eingesetzt werden.
 
-Die Studie zeigte dass mit dem Meeting Mediator virtuelle Gruppen besseren
+Die Studie zeigte, dass mit dem Meeting Mediator virtuelle Gruppen besseren
 Zugriff auf sozio-metrische Aspekte hatten. Damit näherte sich  die Qualität von
 virtuellen Gruppen der von Realen.
 
-Da alle sozi-metrischen Sensoren in Reichweite aller Teilnehmermogiltelefone
+Da alle sozio-metrischen Sensoren in Reichweite aller Teilnehmermogiltelefone
 sein mussten (auf Grund der Bluetooth-Anbindung), konnte die Studie die
 virtuellen Gruppen nur durch einen Vorhang trennen. Dies mindert in unseren
-Augen die Aussagekraft der Studie. Tin Can zeigte hier deutlich, dass es in
-virtuellen Gruppen weniger genutzt wird.
+Augen die Aussagekraft der Studie.
+Tin Can zeigte hier deutlich, dass es in virtuellen Gruppen weniger genutzt
+wird.
 
 Außerdem wurde nur die Sprache zur Analyse herangezogen obwohl der Anspruch an
 den sozio-metrischen Sensor in der Studie mindestens noch die Körperbewegungen
 beinhaltet hatte.
 
 \section{Zusammenfassung und Ausblick}
-Schaut man in der Tabelle der Eigenschaften nach, so erkennt man die wenigen
-Überschneidungen der beiden Systeme. Das liegt vor allem an den
-unterschiedlichen Anforderungen an das jeweiligen System.
+Der Blick auf die Tabelle der Eigenschaften zeigt die
+wenigen Überschneidungen der beiden Systeme. Das liegt vor allem an den
+unterschiedlichen Anforderungen an das jeweilige System.
 
 Unserer Meinung nach wäre als zukünftige Studie ein Hybrid beider Ansätze
 wünschenswert, welcher die Eigenschaften kummulieren würden. Moderne Tablets
-können mittels Webcam und Mikrophone schon einige sozio-metrische Parameter
-ermitteln (z.B. schaut der Benutzer auf das Tablet/in die Webcam? Lautstärke
-und Dauer des Sprachbeitrages). Damit würden zusätzliche Kosten für eigene
+können mittels Webcam und Mikrofon schon einige sozio-metrische Parameter
+ermitteln (z.B. schaut der Benutzer auf das Tablet/in die Webcam? Lautstärke und
+Dauer des Sprachbeitrages). Damit würden zusätzliche Kosten für eigene
 Sensorhardware und Entwicklung entfallen. Mit der Nutzung von Tablets bzw.
-UMTS/WLAN würde auch die Bluetooth Problematik von Meeting Mediator entfallen,
-das ganze wäre Out-of-the-Box für verteilte Umgebungen geeignet. Eine Umsetzung
-mit HTML5 könnte zu einer einzigen Anwendung für diverse Endgeräte führen, damit
-könnte die Akzeptanz weiter gesteigert werden. So könnte bei verteilten
-Ad-hoc Gruppendiskussionen mit jeglichem Endgerät gearbeitet werden. 
+UMTS/WLAN würde auch die Bluetooth Problematik von Meeting Mediator entfallen.
+Ein solches System wäre Out-of-the-Box für verteilte Umgebungen geeignet. Eine
+Umsetzung mit HTML5 könnte zu einer einzigen Anwendung für diverse Endgeräte
+führen, damit könnte die Akzeptanz weiter gesteigert werden. So könnte bei
+verteilten Ad-hoc Gruppendiskussionen mit jeglichem Endgerät gearbeitet werden.
 
 
 % Bibliographie entweder direkt hier eingeben...

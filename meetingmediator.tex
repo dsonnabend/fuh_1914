@@ -2,10 +2,12 @@
 Autor: Antje Westerhoff
 
 \subsection{Idee und Motivation}
-MeetingMediator(MM) wurde als System zur Unterstützung von Gruppendiskussionen
-in gleichen und verteilten Arbeitsumgebungen entwickelt. Das System liefert ein
-real-time feedback auf der Basis von Daten, die mittels soziometrischer
-Aufzeichnungen ermittelt werden.
+Meeting Mediator(MM) \cite{KimChaHolPent2008} wurde als System zur Unterstützung
+von Gruppendiskussionen in räumlich gleichen und verteilten Arbeitsumgebungen
+entwickelt. Das System liefert ein real-time feedback auf der Basis von Daten,
+die mittels soziometrischer Aufzeichnungen ermittelt werden. Dieses Feedback
+soll Gruppen unterstützen, Diskussionen effektiver zu führen, indem alle
+Mitglider gleichermaßen an der Diskussion teilnehmen.
 
 Diskussionsgruppen setzen sich meist aus unterschiedlich dominanten Mitgliedern
 zusammen. Die Dominanz einzelner Gruppenmitglieder führt zwar einerseits die
@@ -15,15 +17,17 @@ entmutigt, oder deren Beiträge unterdrückt.
 Insbesondere bei Diskussionen mit verteilten Gruppenmitgliedern, fehlt der
 Gruppe teilweise die Möglichkeit auf die zusätzlich zum gesprochenen Wort
 vorhandenen verschiedenen soziologischen Signale z.B. Enthusiasmus oder
-Körperhaltung der anderen Gruppenmitglieder zu reagieren.
-Die von MM verwendeten Sociometric badges sammeln und analysieren
-verbale und non-verbale Verhaltensmerkmale.
+Körperhaltung, der anderen Gruppenmitglieder zu reagieren.
+Die von MM verwendeten soziometrischen Sensoren (Sociometric badges)
+\cite{MITbadge} sammeln und analysieren verbale und non-verbale
+Verhaltensmerkmale.
 
 Mittels MM werden diese Daten ausgewertet und den jeweiligen Gruppenmitgliedern
 auf deren Mobiltelefon visualisiert. Dieses Vorgehen soll dem einzelnen
 Diskussionsteilnehmer eine wenig ablenkende Information bieten, das eigene
 Verhalten im Kontext zum Gruppenverhalten einzuordnen und daraus möglicherweise
-Verhaltensänderungen abzuleiten, um den Gruppenerfolg zu vergrößeren.
+Ver\-hal\-tens\-än\-de\-run\-gen abzuleiten, um den Gruppenerfolg zu
+vergrößeren.
 
 \subsection{Adaption}
 
@@ -32,19 +36,18 @@ Badges als dezentrale Einheiten zur Aufzeichnung und Auswertung
 soziologischer Daten verwendet. In der derzeitigen Version werden nur die
 Sprechdauer und -häufigkeit und die Körperbewegung ausgewertet.
 Die Länge und Häufigkeit von Gesprächsbeiträgen und die Bewegung und Hinwendung
-zu anderen Gruppenmitgliedern charakterisiert die Dominanz von Diskussionsteilnehmern.
+zu anderen Gruppenmitgliedern charakterisieren die Dominanz von
+Diskussionsteilnehmern.
 
-Um Teilnehmern an einer Gruppendiskussion zusätzliche
-Informationen über soziologische Signale zur Verfügung stellen zu können, werden 
-Instrumente zur Messung dieser Signale benötigt. Die Entwickler von MM wählen dazu mobile
+Um Teilnehmern an einer Gruppendiskussion zusätzliche Informationen über
+soziologische Signale zur Verfügung stellen zu können, werden Instrumente zur
+Messung dieser Signale benötigt. Die Entwickler von MM wählen dazu mobile
 Sensoren (Sociometric badges), die jeder Teilnehmer um den Hals tragen kann.
 Die Geräte erkennen Audio-Signale und messen mittels Infrarot-Sensoren
 Bewegungen. Mittels Bluetooth werden die Messdaten an das Mobiltelefon des
-Teilnehmers übermittelt. 
-% \par
-% \epsfig{file=sociometricbadge.jpg, width=7cm}
-% \par
-% Abbildung 1:
+Teilnehmers übermittelt. Aufgrund der Reichweite von Bluetooth wurde die
+räumlich verteilte Gruppe nur durch einen Sichtschutz zwischen den
+Gruppenteilnehmern simuliert.
 
 \begin{figure}[htp]
 \centering
@@ -52,34 +55,38 @@ Teilnehmers übermittelt.
 \caption{Sozio-metrischer Sensor (Badge)}
 \end{figure}
 
-Die so übermittelten Daten werden dann durch die
-Meeting-Mediator-Applikation akkumuliert und visualisiert.
+Die so übermittelten Daten werden dann durch die Meeting-Mediator-Applikation
+akkumuliert und visualisiert.
 Die graphische Anzeige auf den Mobiltelefonen der Teilnehmer wird in 5 Sekunden
-Intervallen aktualisiert und kumuliert die Daten über den gesamten Zeitraum der Diskussion.
+Intervallen aktualisiert und kumuliert die Daten über den gesamten Zeitraum der
+Diskussion.
 Die Anzeige auf den Mobiltelefonen der Diskussionsteilnehmer wurde gewählt, um
-nicht einen weiteren möglicherweise ablenkenden Kommunikationskanal einzuführen.
+nicht einen weiteren mög\-li\-cher\-wei\-se ablenkenden Kommunikationskanal
+einzuführen.
 
 Die auf dem Mobiltelefon angezeigte Grafik stellt die einzelnen Mitglieder als
 Rechtecke in unterschiedlichen Farben, korrespondierend zu den Farben ihrer
-Sociometric badges, dar. Die Balance der Diskussion wird als zentraler Kreis dargestellt, der wie
-ein Ball an elastischen Seilen zu den Rechtecken der Diskussionsteilnehmer
-gezogen wird, abhängig von deren jeweiligem Anteil an der Diskussion. Die Dicke
-der Linie, die den zentralen Kreis mit den Rechtecken verbindet, visualisiert die Sprechzeit des jeweiligen Teilnehmers. 
-% \par
-% \epsfig{file=mm.jpg}
-% \par
-\begin{figure}[htp]
-\centering
+Sociometric badges, dar. Die Balance der Diskussion wird als zentraler Kreis
+dargestellt, der wie ein Ball an elastischen Seilen zu den Rechtecken der
+Diskussionsteilnehmer gezogen wird, abhängig von deren jeweiligem Anteil an der
+Diskussion. Die Dicke der Linie, die den zentralen Kreis mit den Rechtecken
+verbindet, visualisiert die Sprechzeit des jeweiligen Teilnehmers. Die Farbe des
+zentralen Kreises zeigt mit grün eine hohe Interaktivität der Diskussion an und
+möchte mit weiß zu mehr Interaktion ermuntern.
+
+\begin{figure}[htp] 
+\centering 
 \includegraphics[width=7cm]{mm.jpg}
 \caption{Benutzeroberfläche von Meeting Mediator}
 \end{figure}
+
 \subsection{Evaluation}
 MM möchte die Effizienz von Gruppendiskussionen erhöhen, indem die
-Gruppendynamik in Echtzeit graphisch dargestellt wird und damit die Änderung von 
+Gruppendynamik in Echtzeit graphisch dargestellt wird und damit die Änderung von
  individuellen und Gruppenverhaltensweisen fördert.
  
 Die Studie zeigte, dass:
-\dots
+
 \begin{itemize}
   \item MM dazu beiträgt, dass weniger überlappende Gespräche geführt werden, d.h. die
 Gruppe teilt sich nicht in Untergruppen, sondern diskutiert gemeinsam.
@@ -101,11 +108,11 @@ genauso, wie es auch intuitiv erfolgen würde. Es fand sich aber kein
 signifikanter Unterschied zwischen dominanten und weniger dominaten
 Gruppenmitgliedern bei der Messung von Bewegungen.
 Der Einfluss, den MM auf das Verhalten von dominanten und weniger dominanten
-Diskussionsmitgliedern hat ist sehr unterschiedlich.
+Diskussionsmitgliedern hat, ist sehr unterschiedlich.
 Bei der Beobachtung ohne die Beeinflussung von MM zeigte sich, dass weniger
 dominante Personen in Gruppen mit einer dominanten Person insbesondere in
 verteilten Arbeitsgruppen häufiger das Wort ergreifen, als in Gruppen mit
-ausschließlich wenig-dominanten Personen.
+ausschließlich wenig-do\-min\-ant\-en Personen.
 
 Die Hypothese, dass MM die Gruppendiskussionen in verteilten Umgebungen
 wesentlich mehr beeinflusst, als in räumlich nicht getrennten Umgebungen, konnte
