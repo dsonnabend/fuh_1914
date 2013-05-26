@@ -31,19 +31,30 @@ vergrößeren.
 
 \subsection{Adaption}
 
-MM ist eine J2ME-Applikation für Smartphones. Zu\-sätz\-lich werden Sociometric
-Badges als dezentrale Einheiten zur Aufzeichnung und Auswertung
-soziologischer Daten verwendet. In der derzeitigen Version werden nur die
-Sprechdauer und -häufigkeit und die Körperbewegung ausgewertet.
-Die Länge und Häufigkeit von Gesprächsbeiträgen und die Bewegung und Hinwendung
-zu anderen Gruppenmitgliedern charakterisieren die Dominanz von
+MM ist eine J2ME-Applikation für Smartphones. J2ME ist die Micro Edition von
+Java (Java ME), die speziell die Erstellung von Java-Anwendungen ermöglicht, die
+auf kleinen Geräten mit begrenzter Speicher-, Anzeige- und Leistungskapazität
+ausgeführt werden. Die zur Software-Ent\-wick\-lung zur Verfügung stehende API
+(Application Programming Interface) und ein umfangreiches SDK (Software
+Development Kit) ermöglichen eine komfortable und durch die Nutzung der Java VM
+auch eine hardware-unabhängige Programmentwicklung. Referenz:
+http://www.oracle.com/technetwork/java/javame/index.html zuletzt besucht:
+25.05.2013
+
+Zu\-sätz\-lich werden Sociometric Badges als dezentrale Einheiten zur
+Aufzeichnung und Auswertung soziologischer Daten verwendet. In der derzeitigen
+Version werden nur die Sprechdauer und -häufigkeit und die Körperbewegung
+ausgewertet.
+Die Länge und Häufigkeit von Ge\-sprächs\-bei\-trä\-gen und die Bewegung und
+Hinwendung zu anderen Gruppenmitgliedern charakterisieren die Dominanz von
 Diskussionsteilnehmern.
 
 Um Teilnehmern an einer Gruppendiskussion zusätzliche Informationen über
 soziologische Signale zur Verfügung stellen zu können, werden Instrumente zur
 Messung dieser Signale benötigt. Die Entwickler von MM wählen dazu mobile
-Sensoren (Sociometric badges), die jeder Teilnehmer um den Hals tragen kann.
-Die Geräte erkennen Audio-Signale und messen mittels Infrarot-Sensoren
+Sensoren (Sociometric badges) (siehe Figure \ref{badge}), die jeder Teilnehmer
+um den Hals tragen kann.
+Die Geräte erkennen Audio-Signale und messen mittels Infrarot-Sen\-so\-ren
 Bewegungen. Mittels Bluetooth werden die Messdaten an das Mobiltelefon des
 Teilnehmers übermittelt. Aufgrund der Reichweite von Bluetooth wurde die
 räumlich verteilte Gruppe nur durch einen Sichtschutz zwischen den
@@ -52,7 +63,8 @@ Gruppenteilnehmern simuliert.
 \begin{figure}[htp]
 \centering
 \includegraphics[width=8cm]{sociometricbadge.jpg}
-\caption{Soziometrischer Sensor (Sociometric Badge)}
+\caption{Soziometrischer Sensor (Sociometric Badge) \protect\cite{MITbadge}}
+\label{badge}
 \end{figure}
 
 Die so übermittelten Daten werden dann durch die Meeting-Mediator-Applikation
@@ -64,20 +76,22 @@ Die Anzeige auf den Mobiltelefonen der Diskussionsteilnehmer wurde gewählt, um
 nicht einen weiteren mög\-li\-cher\-wei\-se ablenkenden Kommunikationskanal
 einzuführen.
 
-Die auf dem Mobiltelefon angezeigte Grafik stellt die einzelnen Mitglieder als
-Rechtecke in unterschiedlichen Farben, korrespondierend zu den Farben ihrer
-Sociometric badges, dar. Die Balance der Diskussion wird als zentraler Kreis
-dargestellt, der wie ein Ball an elastischen Seilen zu den Rechtecken der
-Diskussionsteilnehmer gezogen wird, abhängig von deren jeweiligem Anteil an der
-Diskussion. Die Dicke der Linie, die den zentralen Kreis mit den Rechtecken
-verbindet, visualisiert die Sprechzeit des jeweiligen Teilnehmers. Die Farbe des
-zentralen Kreises zeigt mit grün eine hohe Interaktivität der Diskussion an und
-möchte mit weiß zu mehr Interaktion ermuntern.
+Die auf dem Mobiltelefon angezeigte Grafik (siehe Figure \ref{display}) stellt
+die einzelnen Mitglieder als Rechtecke in unterschiedlichen Farben,
+korrespondierend zu den Farben ihrer Sociometric badges, dar. Die Balance der
+Diskussion wird als zentraler Kreis dargestellt, der wie ein Ball an elastischen
+Seilen zu den Rechtecken der Diskussionsteilnehmer gezogen wird, abhängig von
+deren jeweiligem Anteil an der Diskussion. Die Dicke der Linie, die den
+zentralen Kreis mit den Rechtecken verbindet, visualisiert die Sprechzeit des
+jeweiligen Teilnehmers. Die Farbe des zentralen Kreises zeigt mit grün eine hohe
+Interaktivität der Diskussion an und möchte mit weiß zu mehr Interaktion
+ermuntern.
 
 \begin{figure}[htp] 
 \centering 
 \includegraphics[width=8cm]{mm.jpg}
-\caption{Benutzeroberfläche von Meeting Mediator}
+\caption{Benutzeroberfläche von Meeting Mediator \protect\cite{MITbadge}}
+\label{display}
 \end{figure}
 
 
