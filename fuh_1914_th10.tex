@@ -30,15 +30,14 @@
 
 \maketitle
 
-\abstract{ Wir vergleichen anhand der Systeme Tin Can und Meeting Mediator zwei
-Ansätze zur Unterstützung und Verbesserung der Diskussion in Gruppen.
-Die Gruppengröße divergiert zwischen vier und elf Personen und bildet damit
-typische Seminarsituationen ab. Nach einer kurzen Begriffsbestimmung gehen wir
-näher auf die Anforderungen ein und beschreiben, warum eine Gruppendiskussion
-eventl. nicht gut genug ist und warum diese verbessert werden kann. Beide
-Systeme beschreiben wir detailiert in Aufbau, Umfang und Nutzung um
-abschliessend einen direkte Vergleich geben zu können.}
-
+\abstract{ Wir präsentieren einen Vergleich der beiden Studien Tin Can
+\cite{HarGorSch2012} und Meeting Mediator \cite{KimChaHolPent2008}. Beide
+Systeme führen zusätzliche Kommunikationskanäle ein, um die Partizipation aller
+Teilnehmer in mündlichen Diskussionen zu verbessern. Der direkte Vergleich
+zeigt, dass jeder Ansatz jeweils nur ein Teilproblem löst.
+Wir schlussfolgern aus diesem Vergleich, dass ein Hybrid beider Ansätze,
+insbesondere mit moderenen Tablet-Technologien, die Pro\-blem\-lö\-sung weiter
+verbessern könnte.}
 
 \keywords{Computer vermittelte Kommunikation, Unterstützung von
 Gruppendiskussion, Backchannel, Tin Can, Meeting Mediator}
@@ -48,8 +47,8 @@ Die Diskussion einer Gruppe, deren Mitglieder sich am selben Ort zur selben Zeit
 gegenübersitzen, wird oft als optimale Kommunikationstechnik betrachtet. Harry
 et al. \cite{HarGorSch2012} sprechen sogar von einem `Goldstandard`. Viele
 Com\-puter-\-ge\-stützte Systeme versuchen, genau diesen
-Kommunikationsstandard virtuell abzubilden und eine Dimension zu ersetzen z.B. den unterschiedlichen
-Ort oder die fehlende audio-visuelle Kommunikation. Dabei wird oft unterschätzt,
+Kommunikationsstandard virtuell abzubilden und eine Dimension zu ersetzen z.B. den gemeinsamen
+Ort oder eine audio-visuelle Kommunikation. Dabei wird oft unterschätzt,
 dass dieser 'Goldstandard' ebenfalls weiter verbessert werden kann, denn auch
 solche Diskussionen sind häufig nicht so effektiv, wie sie es sein könnten.
 Dabei denkt sicherlich jeder an selbst erlebte Besprechungen, die oft auf Grund schlechter
@@ -60,15 +59,17 @@ Diskussion nicht berücksichtigt wurden.
 Einfache Managementtechniken wie Brainstorming, eine Tagesordnung und eine
 Rednerliste können da sicherlich bereits helfen.
 Die beiden vorgestellten Systeme Tin Can und Meeting Mediator gehen allerdings
-noch einen Schritt weiter und versuchen synchron zur Diskussion bzw. dem Vortrag
+noch einen Schritt weiter und versuchen parallel zur Diskussion bzw. dem Vortrag
 eine weitere Wahrnehmungsebene zu schaffen.
 
-% Im Falle des Systemes Tin Can
-% handelt es sich um Textnotizen, welche das Brainstorming bzw. die Diskussion
-% gestalten und führen sollen. Bei dem Meeting Mediator geht es eher um zeitnahe
-% Visualisierung der Beteiligung jedes einzelnen Gruppenteilnehmers während der
-% Gruppendiskussion. Beide System wollen die Beteiligung steigern und somit
-% schneller und effektiver zu Lösungen kommen.
+Diese Arbeit vergleicht anhand der Systeme Tin Can und Meeting Mediator zwei
+Ansätze zur Unterstützung und Verbesserung der Diskussion in Gruppen.
+Nach einer kurzen Begriffsbestimmung werden die Anforderungen näher beschrieben
+und erläutert warum eine Gruppendiskussion eventl. nicht gut genug ist und wie
+diese verbessert werden kann. Beide Systeme werden in Aufbau, Umfang und Nutzung
+dargestellt. Als Ergebnis der Arbeit steht der direkte Vergleich der beiden
+Systeme und ein Ausblick zu\-künf\-ti\-ger Entwicklungen.
+
 
 \section{Begriffsbestimmung}
 \subsection{Gruppendiskussion}
@@ -85,28 +86,27 @@ sondern auch insbesondere die Interpretation dieser Wahrnehmungen im Kontext zu
 den eigenen Aktivitäten.
 Mit der Herstellung von Awareness in kooperativen Umgebungen mö\-chte man alle
 soziologischen Signale transportieren wie z.B. Emotionen und allen
-Gruppenmitgliedern den gleichen Kenntnisstand vermitteln.
+Gruppenmitgliedern den gleichen Kenntnisstand vermitteln \cite{SchuLuk2007}.
 
 \subsection{Aufmerksamkeit}
 Laut Durkheim \cite{Dur1974} sind wir in jeder Situation immer mehr oder weniger
 durch externe Stimuli abgelenkt. Diese Stör\-un\-gen unterbrechen den fiktiven
 Begriff der Aufmerksamkeit. Es bedarf also einer Anstrengung anderen Personen
 seine Aufmerksamkeit mitzuteilen. Das kann durch verschiedenste soziale Aktionen
-präsentiert werden wie z.B. Zuhören oder aber das Schreiben von Notizen.
+vermittelt werden wie z.B. Zuhören oder aber das Schreiben von Notizen.
 
 \subsection{Dominanz}
 Tritt ein Individuum aus einer Gruppe durch üb\-er\-durch\-schnitt\-liche
 Beteiligung heraus und wirkt damit beherrschend im Diskussionsverlauf, sprechen
 wir von Dominanz.
-In den beiden vorliegenden Studien wird Dominanz (im Gegensatz zu der
-allgemeinen Bedeutung) nicht im negativen Kontext gesehen. Viel mehr beschreibt
-eine hohe Dominanz die Beteiligung in der Gruppe.
+In den beiden vorliegenden Studien \cite{HarGorSch2012} \cite{KimChaHolPent2008}
+wird Dominanz (im Gegensatz zu der allgemeinen Bedeutung) nicht im negativ
+gesehen. Viel mehr beschreibt eine hohe Dominanz die Beteiligung in der Gruppe.
 Die Steigerung der Dominanz bei zurückhaltenderen Gruppenmitgliedern wird oft
 als Ziel von Studien genannt.
 
 \subsection{Kanal (Channel)}
-Ein Kanal beschreibt in den vorgestellten Studien mehrere Dinge.
-\cite{BergKara2009-1}.
+Ein Kanal beschreibt in der vorgestellten Studie \cite{BergKara2009-1} mehrere Dinge.
 Erstens ist ein Kommunikationskanal der Weg einer Botschaft vom Sender zum
 Empfänger. Dies ist in der Soziologie die Sprache oder non-verbal die
 Kör\-per\-spra\-che.
@@ -129,8 +129,8 @@ weniger der Durchsatz das entscheidende Kriterium. Vielmehr soll ein
 zusätzlicher Raum geschaffen werden um Informationen 'abzulegen'. Als Analogie dient den
 Autoren Harry et al. \cite{HarGorSch2012} ein Restaurant mit Speisesaal (front performance) und Küche
 (back performance).
-An beiden Orten werden verschiedene Tätigkeiten von den gleichen ,handelnden
-Personen durchgeführt die zu einem gemeinsamen Ergebnis führen.
+An beiden Orten werden verschiedene Tätigkeiten von den selben handelnden
+Personen durchgeführt. Dies führt zu einem gemeinsamen Ergebnis.
 
 \subsection{Soziale Spiegel (Social Mirrors)}
 Soziale Spiegel \cite{BergKara2009-2} sind Visualisierungen von sozialen
@@ -153,8 +153,8 @@ einer gleichberechtigten Beteiligung aller Gruppenmitglieder an der Diskussion.
 Dies mindert die Themenvielfalt und den Ideenaustausch. Introvertierte
 Per\-sön\-lich\-keit\-en werden nicht maximal gefördert.
 
-Gefordert wird, Dominanzen zu erkennen, introvertierte Per\-sön\-lich\-keit\-en
-zu couragieren und die Themen-/\-Ideen\-vielfalt zu maximieren.
+Gefordert wird, Dominanzen zu erkennen ({\em Anforderung 1}), introvertierte Per\-sön\-lich\-keit\-en
+zu couragieren ({\em Anforderung 2}) und die Themen-/\-Ideen\-vielfalt zu maximieren ({\em Anforderung 3}).
 
 \input{tincan}
 \input{meetingmediator}
@@ -174,25 +174,31 @@ Eine Übersicht der Systemeigenschaften findet man in folgender Tabelle:
 
 \begin{table}[h]
 \begin{tabular}{ l | c | c }
-   & Tin Can & Meeting Mediator \\
+   & Tin Can & MM \\
    & \\
   \hline
-  Mobile Lösung & ja & ja \\
-  Virtuelle Session möglich & ja & - \\
-  Soziometrische Sensoren & - & ja \\
+  Mobile Lösung & \checkmark & \checkmark \\
+  Virtuelle Session möglich & \checkmark & - \\
+  Soziometrische Sensoren & - & \checkmark \\
   \hline
-  Redezeit Gruppenmitglied & - & ja \\
-  Redezeit Thema  & ja & - \\
-  Redezeit gesamt & ja & - \\
+  Redezeit Gruppenmitglied & - & \checkmark \\
+  Redezeit Thema  & \checkmark & - \\
+  Redezeit gesamt & \checkmark & - \\
   \hline
   
-  Visualierung Dominanz & - & ja \\
-  Visualierung Teilnehmer & ja & ja \\
+  Visualierung Dominanz & - & \checkmark \\
+  Visualierung Teilnehmer & \checkmark & \checkmark \\
   \hline
-  Themenvorrat & ja & - \\
-  Ideenvorrat & ja & - \\
-  Private Ideen & ja & - \\
-  Archivfunktion & ja & - \\
+  Themenvorrat & \checkmark & - \\
+  Ideenvorrat & \checkmark & - \\
+  Private Ideen & \checkmark & - \\
+  Archivfunktion & \checkmark & - \\
+  
+  \hline
+  Anf. 1 - Dominanz erkennen & - & \checkmark \\
+  Anf. 2 - Introvertierte  & & \\
+  Persönlichkeiten stärken & \checkmark & \checkmark \\
+  Anf. 3 - Themen- / Ideenvielfalt & & \\ maximieren & \checkmark & - \\
   
 
 \end{tabular}
@@ -239,8 +245,8 @@ Der Blick auf die Tabelle der Eigenschaften zeigt die wenigen Überschneidungen
 der beiden Systeme. Das liegt vor allem an den unterschiedlichen Anforderungen
 an das jeweilige System.
 
-Unserer Meinung nach wäre als zukünftige Studie ein Hybrid beider Ansätze
-wünschenswert, welcher die Eigenschaften verbinden würde. 
+Bei zukünftigen Studien ist ein Hybrid beider Ansätze
+wünschenswert (Kombination der Eigenschaften von Tin Can und Meeting Mediator). 
 
 Moderne Tablets können mittels Webcam und Mikrofon schon einige soziometrische
 Parameter ermitteln (z.B. schaut der Benutzer auf das Tablet/in die Webcam?
@@ -264,10 +270,6 @@ Drew Harry, Eric Gordon, Chris Schmandt.
 \newblock Setting the stage for interaction: a tablet application to augment group discussion in a seminar class. 
 \newblock {\em In Proceedings of CSCW 2012, ACM Press}, pp. 1071-1080. doi>10.1145/2145204.2145364. 
 
-\bibitem{DiMicco2007}
-J. M. DiMicco, K. J. Hollenbach, A. Pandolfo, and W. Bender.
-\newblock The Impact of Increased Awareness While Face-to-Face.
-\newblock {\em Human-Computer Interaction}, p. 22, 2007.
 
 \bibitem{KimChaHolPent2008}
 T. Kim, A. Chang, L. Holland, and A. S. Pentland.
@@ -301,7 +303,7 @@ Wikipedia: Die Likert Skala.
 
 \bibitem{SchuLuk2007}
 T. Schümmer, Stephan Lukosch
-\newblock{ \em Patterns for Computer-Mediated Interaction}. Jon Wiley \& Sons Ltd., 2007.
+\newblock{ \em Patterns for Computer-Mediated Interaction}. Jon Wiley \& Sons Ltd., p. 47-48, 2007.
 
 \bibitem{Dur1974}
 E. Durkheim
