@@ -66,6 +66,7 @@
 \usepackage{amssymb}
 \usepackage{amsmath}
 \usepackage{amsfonts}
+\usepackage[ngerman]{babel}
 %
 % ACM_PROC_ARTICLE-SP  DOCUMENT STYLE
 % G.K.M. Tobin August-October 1999
